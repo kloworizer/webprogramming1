@@ -1,37 +1,66 @@
-header {
-    background-color: #9fd8ed;
-    color: #01416f;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
+.header {
+  background-color: #9fd8ed;
+  color: #01416f;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.title {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* navigation menu */
+.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #9fd8ed;
+  overflow: hidden;
+}
+
+.menu {
+  padding-right: 20px;
+}
+
+.menu a {
+  display: block;
+  padding: 15px;
+  color: var(--white);
+}
+
+.menu a:hover {
+  background-color: white;
+}
+
+.nav {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    max-height: none;
+    top: 0;
+    position: relative;
+    float: right;
+    width: fit-content;
   }
-  
-  .logo {
-    vertical-align: middle;
-    display: inline-block;
+  .menu li {
+    float: left;
   }
-  
-  .title {
-    vertical-align: middle;
-    display: inline-block;
+  .menu a:hover {
+    background-color: transparent;
+    color: var(--gray);
   }
-  
-  nav {
-    vertical-align: middle;
-    display: inline;
-    padding-left: 100px;
+
+  .hamb {
+    display: none;
   }
-  
-  nav > a,
-  a:visited {
-    font-weight: 600;
-    font-size: 1.1em;
-    text-decoration: none;
-    color: inherit;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  nav > a:hover {
-      color: #f7941d;
-  }
+}
