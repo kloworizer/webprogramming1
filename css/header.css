@@ -1,14 +1,24 @@
+.header-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
 .header {
   background-color: #9fd8ed;
-  color: #01416f;
+  color: #042A2B;
   width: 100%;
-  padding: 20px 0;
-  text-align: center;
+  padding: 15px 0;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
 }
 
 .logo {
   vertical-align: middle;
   display: inline-block;
+  margin-left: 20px;
 }
 
 .title {
@@ -16,51 +26,104 @@
   display: inline-block;
 }
 
-/* navigation menu */
+/* mobile navigation menu */
 .nav {
+  background-color: #9fd8ed;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #9fd8ed;
   overflow: hidden;
 }
 
 .menu {
   padding-right: 20px;
+  margin-left: 20px;
 }
 
 .menu a {
   display: block;
   padding: 15px;
-  color: var(--white);
+  color: #042A2B;
 }
 
 .menu a:hover {
-  background-color: white;
-}
-
-.nav {
-  max-height: 0;
-  transition: max-height 0.5s ease-out;
+  background-color: #EF7B45;
 }
 
 @media (min-width: 768px) {
+  .header {
+    text-align: center;
+    padding-left: 0;
+  }
   .nav {
+    vertical-align: middle;
+    display: inline-block;
     max-height: none;
-    top: 0;
-    position: relative;
-    float: right;
+    margin-left: 30px;
     width: fit-content;
+    position: relative;
   }
   .menu li {
     float: left;
   }
   .menu a:hover {
     background-color: transparent;
-    color: var(--gray);
+    color: #EF7B45;
   }
 
   .hamb {
     display: none;
   }
+}
+
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 20px 20px;
+}
+
+.hamb-line {
+  background: #042A2B;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after{
+  background: #042A2B;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
 }
