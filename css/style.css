@@ -1,5 +1,20 @@
-html {
-  font-family: "Open Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #9fd8ed;
+}
+
+ul {
+  list-style: none;
+}
+
+.row {
+  padding: 30px;
 }
 
 .row::after {
@@ -8,9 +23,36 @@ html {
   display: table;
 }
 
-/* Untuk tampilan handphone: */
 [class*="col-"] {
+  float: left;
   width: 100%;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Untuk tampilan handphone: */
+  body, .button {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .hero > div {
+    margin-top: 20vh;
+    padding: 0 20px;
+    color: white;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -55,6 +97,34 @@ html {
 
 @media only screen and (min-width: 768px) {
   /* Untuk desktop: */
+
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .hero > div {
+    margin-top: 30vh;
+    padding: 0 20vw;
+    color: white;
+  }
+
   .col-1 {
     width: 8.33%;
   }
@@ -95,10 +165,31 @@ html {
 
 body {
   max-width: max-content;
-  margin: auto;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.hero {
+  background: linear-gradient(to top, #000000d5, #000000a6),
+    url(../img/pexels-cottonbro-6208699.jpg) no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.button {
+  border-radius: 2px;
+  background-color: #EF7B45;
+  padding: 10px 24px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-submit {
+  background-color: #9fd8ed;
 }
