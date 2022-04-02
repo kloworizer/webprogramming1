@@ -7,3 +7,4 @@ esha:
 * base CSS
 * base JS
 * responsive menu
+* fixing header opacity

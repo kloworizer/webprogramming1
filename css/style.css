@@ -9,6 +9,10 @@ a, a:visited {
   color: #9fd8ed;
 }
 
+a:hover {
+  color: #EF7B45;
+}
+
 ul {
   list-style: none;
 }
