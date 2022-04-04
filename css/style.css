@@ -167,7 +167,7 @@ ul {
   }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1600px) {
   .row {
     padding : 30px 20vh;
   }
@@ -196,10 +196,20 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .button-submit {
   background-color: #9fd8ed;
+}
+
+.section-light {
+  text-align: center;
+}
+
+.section-dark {
+  background-color: #000202;
+  color: white;
+  text-align: center;
 }
