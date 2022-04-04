@@ -144,6 +144,8 @@
 
 /* li.dropdown {
   display: inline-block;
+  vertical-align: middle;
+  margin: 0px auto;
 } */
 
 .dropdown-content {
