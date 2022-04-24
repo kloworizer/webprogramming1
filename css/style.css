@@ -6,11 +6,12 @@
 
 a, a:visited {
   text-decoration: none;
-  color: #9fd8ed;
+  font-weight: bold;
+  color: #EF7B45;
 }
 
 a:hover {
-  color: #EF7B45;
+  color: #9fd8ed;
 }
 
 ul {
