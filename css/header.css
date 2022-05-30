@@ -52,7 +52,7 @@
   background-color: #EF7B45;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header {
     text-align: center;
     padding-left: 0;
