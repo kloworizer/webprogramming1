@@ -6,12 +6,11 @@
 
 a, a:visited {
   text-decoration: none;
-  font-weight: bold;
   color: #151F62;
 }
 
 a:hover {
-  color: #F4E04D;
+  color: #F18F01;
 }
 
 ul {
@@ -20,6 +19,10 @@ ul {
 
 .row {
   padding: 25px;
+}
+
+.row-bottom {
+  padding-bottom: 0 !important;
 }
 
 .row::after {
@@ -37,15 +40,15 @@ ul {
 @media only screen and (max-width: 768px) {
   /* Untuk tampilan handphone: */
   body, .button {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   h1 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   h2 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   h3 {
@@ -115,15 +118,15 @@ ul {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 1.3em;
+    font-size: 26px;
   }
 
   h3 {
-    font-size: 1em;
+    font-size: 20px;
     font-weight: 700;
   }
 
@@ -180,7 +183,8 @@ ul {
 
 @media only screen and (min-width: 1600px) {
   .row {
-    padding : 30px 20vh;
+    padding-left: 20vh;
+    padding-right: 20vh;
   }
 }
 
@@ -212,7 +216,7 @@ body {
 }
 
 .button:hover {
-  color: #F4E04D;
+  color: #F18F01;
 }
 
 .button-submit {
@@ -221,18 +225,24 @@ body {
 
 .section-light {
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section-mid {
   background-color: #787A91;
   color: white;
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section-dark {
   background-color: #345995;
   color: white;
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .div-wrapper {
@@ -246,11 +256,18 @@ body {
 }
 
 .block-light {
+  background-color: white;
+  border-radius: 6px;
+  color: #345995;
   text-align: center;
+  border-radius: 6px;
+  margin: 10px 10px;
+  padding: 30px;
 }
 
 .block-mid {
   background-color: #787A91;
+  border-radius: 6px;
   color: white;
   text-align: center;
 }
@@ -260,6 +277,6 @@ body {
   border-radius: 6px;
   color: white;
   text-align: center;
-  margin: 0 10px;
+  margin: 0px 10px 10px 10px;
   padding: 30px;
 }
