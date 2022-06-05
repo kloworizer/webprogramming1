@@ -197,7 +197,7 @@ body {
 
 .hero {
   background: linear-gradient(to top, #000000d5, #000000a6),
-    url(../img/pexels-cottonbro-6208699.jpg) no-repeat top center;
+    url(../img/pexels-katerina-holmes-5905445.jpg) no-repeat bottom center;
   background-size: cover;
   height: 100vh;
 }
@@ -257,7 +257,7 @@ body {
 
 .block-light {
   background-color: white;
-  border-radius: 6px;
+  border-radius: 16px;
   color: #345995;
   text-align: center;
   border-radius: 6px;
@@ -267,7 +267,7 @@ body {
 
 .block-mid {
   background-color: #787A91;
-  border-radius: 6px;
+  border-radius: 16px;
   color: white;
   text-align: center;
   margin: 0px 10px 10px 10px;
@@ -276,9 +276,10 @@ body {
 
 .block-dark {
   background-color: #345995;
-  border-radius: 6px;
+  border-radius: 16px;
   color: white;
-  text-align: center;
+  text-align: justify;
+  text-justify: auto;
   margin: 0px 10px 10px 10px;
   padding: 30px;
 }
