@@ -257,7 +257,7 @@ body {
 
 .block-light {
   background-color: white;
-  border-radius: 6px;
+  border-radius: 16px;
   color: #345995;
   text-align: center;
   border-radius: 6px;
@@ -267,7 +267,7 @@ body {
 
 .block-mid {
   background-color: #787A91;
-  border-radius: 6px;
+  border-radius: 16px;
   color: white;
   text-align: center;
   margin: 0px 10px 10px 10px;
@@ -276,9 +276,10 @@ body {
 
 .block-dark {
   background-color: #345995;
-  border-radius: 6px;
+  border-radius: 16px;
   color: white;
-  text-align: center;
+  text-align: justify;
+  text-justify: auto;
   margin: 0px 10px 10px 10px;
   padding: 30px;
 }
