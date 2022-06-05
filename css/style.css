@@ -7,11 +7,11 @@
 a, a:visited {
   text-decoration: none;
   font-weight: bold;
-  color: #EF7B45;
+  color: #151F62;
 }
 
 a:hover {
-  color: #9fd8ed;
+  color: #F4E04D;
 }
 
 ul {
@@ -200,7 +200,7 @@ body {
 
 .button {
   border-radius: 6px;
-  background-color: #EF7B45;
+  background-color: #151F62;
   padding: 10px 24px;
   border: none;
   color: white;
@@ -211,11 +211,21 @@ body {
   vertical-align: middle;
 }
 
+.button:hover {
+  color: #F4E04D;
+}
+
 .button-submit {
   background-color: #9fd8ed;
 }
 
 .section-light {
+  text-align: center;
+}
+
+.section-mid {
+  background-color: #787A91;
+  color: white;
   text-align: center;
 }
 
@@ -233,4 +243,23 @@ body {
 
 .div-wrapper img {
   vertical-align: bottom;
+}
+
+.block-light {
+  text-align: center;
+}
+
+.block-mid {
+  background-color: #787A91;
+  color: white;
+  text-align: center;
+}
+
+.block-dark {
+  background-color: #345995;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  margin: 0 10px;
+  padding: 30px;
 }
