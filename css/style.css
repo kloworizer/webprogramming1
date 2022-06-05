@@ -18,6 +18,8 @@ ul {
 }
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
   padding: 25px;
 }
 
@@ -33,7 +35,7 @@ ul {
 
 [class*="col-"] {
   float: left;
-  width: 100%;
+  width: 90%;
   padding: 10px;
 }
 
@@ -230,7 +232,7 @@ body {
 }
 
 .section-mid {
-  background-color: #787A91;
+  background-color: #787A91 !important;
   color: white;
   text-align: center;
   padding-top: 50px;
@@ -238,7 +240,7 @@ body {
 }
 
 .section-dark {
-  background-color: #345995;
+  background-color: #345995 !important;
   color: white;
   text-align: center;
   padding-top: 50px;
