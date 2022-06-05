@@ -1,5 +1,5 @@
 .footer {
-  background-color: #042a2b;
+  background-color: #151F62;
   color: white;
   text-align: center;
 }
@@ -15,9 +15,9 @@ a.footerlink,
 a.footerlink:visited {
   text-decoration: none;
   font-weight: normal;
-  color: #9fd8ed;
+  color: #EEEEEE;
 }
 
 a.footerlink:hover {
-  color: #ef7b45;
+  color: #F4E04D;
 }
