@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: max-content;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
 a, a:visited {
   text-decoration: none;
   color: #151F62;
@@ -19,24 +26,24 @@ ul {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
   padding: 25px;
+}
+
+.row > div {
+  margin: 10px;
+  padding: 10px;
 }
 
 .row-bottom {
   padding-bottom: 0 !important;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  width: 90%;
-  padding: 10px;
+.row-bottom > div {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -71,42 +78,6 @@ ul {
 
 @media only screen and (min-width: 600px) {
   /* Untuk tablet: */
-  .col-s-1 {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%;
-  }
   p {
     margin-bottom: 15px;
   }
@@ -141,60 +112,9 @@ ul {
     padding: 0 15vw;
     color: white;
   }
-
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
   p {
     margin-bottom: 20px;
   }
-}
-
-@media only screen and (min-width: 1440px) {
-  .row {
-    padding-left: 20vh;
-    padding-right: 20vh;
-  }
-}
-
-body {
-  max-width: max-content;
-  margin: 0 auto;
-  font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
 }
 
 .hero {
@@ -283,5 +203,5 @@ body {
   text-align: justify;
   text-justify: auto;
   margin: 0px 10px 10px 10px;
-  padding: 30px;
+  padding: 30px !important;
 }
