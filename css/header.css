@@ -52,7 +52,7 @@
   background-color: #F18F01;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .header {
     text-align: center;
     padding-left: 0;
@@ -186,5 +186,5 @@
 }
 
 .button-header:hover {
-  color: #F18F01;
+  background-color: #F18F01;
 }
