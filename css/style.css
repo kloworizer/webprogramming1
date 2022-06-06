@@ -8,11 +8,30 @@ body {
   max-width: max-content;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+  font-size: 14px;
   line-height: 1.2;
   scroll-behavior: smooth;
+  text-align: center;
 }
 
-h1, h2, h3 {
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: bolder;
+}
+
+h1, h2, h3, h4 {
   margin-bottom: 8px;
 }
 
@@ -30,118 +49,65 @@ ul {
 }
 
 p {
-  text-align:justify;
+  margin-bottom: 15px;
   word-spacing: -2px;
   word-break: break-word;
   text-justify: distribute;
 }
 
+.big-font {
+  font-size: 5em;
+  font-weight: bolder;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.underlined {
+  text-decoration: underline #F18F01;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 3px;
+  margin-bottom: 20px;
+}
+
+.head2 {
+  color: #151F62;
+}
+
 .row {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  align-items: center;
   justify-content: space-evenly;
-  align-items: flex-start;
   padding: 25px;
+}
+
+.img-bottom {
+  align-self: flex-end;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.after-bottom {
+  margin-top: 0px !important;
+}
+
+.under-header {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row > div {
   margin: 10px;
   padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.row-bottom {
-  padding-bottom: 0 !important;
-}
-
-.row-bottom > div {
-  padding-bottom: 0;
-  margin-bottom: 0 !important;
-}
-
-@media only screen and (max-width: 768px) {
-  /* Untuk tampilan handphone: */
-  body, .button {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 1.3em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  h3 {
-    font-size: 1em;
-    font-weight: 700;
-  }
-
-  h1, h2, h3 {
-    text-align: center;
-  }
-
-  .hero > div {
-    margin-top: 20vh;
-    padding: 0 20px;
-    color: white;
-  }
-
-  p {
-    margin-bottom: 15px;
-    text-align: center;
-  }
-
-  .row {
-    flex-flow: column wrap;
-  }
-
-  .row-bottom {
-    padding-bottom: 30px !important;
-  }
-
-  .after_bottom {
-    margin-top: 0px !important;
-  }
-
-  .inside-box {
-    padding: 30px 0 30px 0 !important;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  /* Untuk desktop: */
-
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 34px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  h3 {
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  .button {
-    font-size: 20px;
-  }
-
-  .hero > div {
-    margin-top: 35vh;
-    padding: 0 15vw;
-    color: white;
-  }
-
-  p {
-    margin-bottom: 20px;
-  }
+.inside-box {
+  justify-content: center;
 }
 
 .hero {
@@ -151,12 +117,18 @@ p {
   height: 100vh;
 }
 
+.hero > div {
+  padding: 0 20px;
+  color: white;
+}
+
 .button {
   border-radius: 24px;
   background-color: #151F62;
   padding: 10px 24px;
   border: none;
   color: white;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -174,7 +146,6 @@ p {
 }
 
 .section-light {
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -182,7 +153,6 @@ p {
 .section-mid {
   background-color: #787A91 !important;
   color: white;
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -190,9 +160,13 @@ p {
 .section-dark {
   background-color: #345995 !important;
   color: white;
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.ornament-up {
+  background: url(../img/abstract-mesh-vector-background-futuristic-technology-style-card-lines-point-planes-3d-space_22987440-01.png) no-repeat bottom left; 
+  background-size: cover;
 }
 
 .div-wrapper {
@@ -205,30 +179,97 @@ p {
   max-width: 150px;
 }
 
+.block-transparent {
+  border-radius: 16px;
+  color: white;
+  border-radius: 6px;
+  margin: 0px 10px 10px 10px;
+  padding: 30px !important;
+  align-self: stretch;
+}
+
 .block-light {
   background-color: white;
   border-radius: 16px;
   color: #345995;
-  text-align: justify;
   border-radius: 6px;
   margin: 0px 10px 10px 10px;
   padding: 30px !important;
+  align-self: stretch;
 }
 
 .block-mid {
   background-color: #787A91;
   border-radius: 16px;
   color: white;
-  text-align: justify;
   margin: 0px 10px 10px 10px;
   padding: 30px !important;
+  align-self: stretch;
 }
 
 .block-dark {
   background-color: #345995;
   border-radius: 16px;
   color: white;
-  text-align: justify;
   margin: 0px 10px 10px 10px;
   padding: 30px !important;
+  align-self: stretch;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Untuk desktop: */
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .big-font {
+    font-size: 6em;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .row-spaced {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .row-visi {
+    max-width: 1600px;
+    min-height: 70vh;
+    padding-bottom: 0 !important;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .after-bottom {
+    align-self: flex-start;
+  }
+
+  .hero {
+    align-items: center;
+  }
 }
