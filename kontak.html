@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMK Sains Pertiwi - Home</title>
+    <title>Kontak Kami - SMK Sains Pertiwi</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -91,18 +91,35 @@
             </nav>
         </header>
     </div>
-    <div class="row first-row">
-        <div style="flex-basis: 50%;">
-            <h1>Kontak Kami</h1>
+    <div class="row first-row" style="background: linear-gradient(to top, #030111, #ffffff00),
+    url(../img/pexels-pixabay-207691.jpg) no-repeat center center;">
+        <div style="flex-basis: 100%;">
+            <h1 class="white">Kontak Kami</h1>
         </div>
-        <div style="flex-basis: 50%;">
+    </div>
+    <div class="row">
+        <div style="flex-basis: 100%;">
             <form action="#">
-                <div class="row row-form">
-                    <div>Nama</div>
-                    <div style="flex-grow: 2;"><input type="text"></div>
-                    <div>Alamat</div>
-                    <div style="flex-grow: 2;"><input type="text"></div>
-                </div>
+                <h3 style="margin-bottom: 20px;">Tinggalkan pesan Anda, kami akan segera menghubungi.</h3>
+                <ul class="form-flex">
+                    <li>
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama">
+                    </li>
+                    <li>
+                        <label for="nomor-hp">Nomor Handphone</label>
+                        <input type="text" id="nomor-hp">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </li>
+                    <li>
+                        <label for="Pesan">Pesan</label>
+                        <textarea id="pesan" rows="4" cols="50"></textarea>
+                    </li>
+                </ul>
+                <button class="button" style="min-width: 50px; width: 100px; margin-top: 25px;" onclick="alert('Terima kasih, kami akan segera merespon pesan Anda.');">Kirim</button>
             </form>
         </div>
     </div>
