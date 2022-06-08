@@ -4,10 +4,10 @@
 ## work in progress
 
 esha:
-~~* base CSS~~
-~~* base JS~~
-~~* responsive menu~~
-~~* fixing header opacity~~
+* ~~base CSS~~
+* ~~base JS~~
+* ~~responsive menu~~
+* ~~fixing header opacity~~
 * content pages
 
 dwi:
@@ -18,11 +18,11 @@ kossa,hearly,riki:
 * images, videos
 
 ## page status
-~~* home~~
+* ~~home~~
 * profil
 * program sekolah
 * program keahlian
 * kegiatan sekolah
 * berita
-~~* galeri~~
-~~* kontak~~
+* ~~galeri~~
+* ~~kontak~~
