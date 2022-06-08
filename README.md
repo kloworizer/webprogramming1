@@ -24,5 +24,5 @@ kossa,hearly,riki:
 * program keahlian
 * kegiatan sekolah
 * ~~berita~~
-* galeri
+* ~~galeri~~
 * ~~kontak~~
