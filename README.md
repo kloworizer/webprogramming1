@@ -19,7 +19,7 @@ kossa,hearly,riki:
 
 ## page status
 * ~~home~~
-* profil
+* profil : kurang nama guru, kurang peta sekolah
 * program sekolah
 * program keahlian
 * kegiatan sekolah
