@@ -23,6 +23,6 @@ kossa,hearly,riki:
 * program sekolah
 * program keahlian
 * kegiatan sekolah
-* berita
-* ~~galeri~~
+* ~~berita~~
+* galeri
 * ~~kontak~~
