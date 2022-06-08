@@ -342,6 +342,7 @@ p {
   .row-spaced {
     max-width: 1600px;
     margin: auto;
+    justify-content: center;
   }
 
   .row-visi {
