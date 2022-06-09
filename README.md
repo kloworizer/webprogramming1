@@ -19,9 +19,9 @@ kossa,hearly,riki:
 
 ## page status
 * ~~home~~
-* profil : kurang peta sekolah
-* program sekolah
-* program keahlian
+* ~~profil~~
+* ~~program sekolah~~
+* ~~program keahlian~~
 * kegiatan sekolah
 * ~~berita~~
 * ~~galeri~~
