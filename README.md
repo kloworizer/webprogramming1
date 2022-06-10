@@ -9,6 +9,7 @@ esha:
 * ~~responsive menu~~
 * ~~fixing header opacity~~
 * ~~content pages~~
+* fitur share page/media
 
 dwi:
 * ~~content pages~~
