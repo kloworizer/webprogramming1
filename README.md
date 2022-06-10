@@ -8,21 +8,21 @@ esha:
 * ~~base JS~~
 * ~~responsive menu~~
 * ~~fixing header opacity~~
-* content pages
+* ~~content pages~~
 
 dwi:
-* content pages
+* ~~content pages~~
 
 kossa,hearly,riki:
-* pages copy
-* images, videos
+* ~~pages copy~~
+* ~~images, videos~~
 
 ## page status
 * ~~home~~
 * ~~profil~~
 * ~~program sekolah~~
 * ~~program keahlian~~
-* kegiatan sekolah
+* ~~kegiatan sekolah~~
 * ~~berita~~
 * ~~galeri~~
 * ~~kontak~~

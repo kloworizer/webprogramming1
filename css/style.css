@@ -241,6 +241,13 @@ p {
   background-color: #f18f01;
 }
 
+.block-light2 {
+  background-color: white;
+  border-radius: 16px;
+  color: #345995;
+  align-self: stretch;
+}
+
 .block-mid {
   background-color: #787a91;
   border-radius: 16px;
