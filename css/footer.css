@@ -17,7 +17,7 @@ a.footerlink:hover {
 
 .icon-bar {
   position: fixed;
-  top: 85%;
+  top: 80%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -47,5 +47,9 @@ a.footerlink:hover {
   .footer {
     padding: 30px 10vh 0px 10vh;
     text-align: left;
+  }
+
+  .icon-bar {
+    top: 85%;
   }
 }
