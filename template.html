@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <script type="text/javascript" src="js/social.js"></script>
 </head>
 
-<body>
+<body onload="setUrl()">
     <div class="header-container">
         <header class="header">
             <a href="index.html"><img src="img/web-logo-white.png" alt="Logo SMK Sains Pertiwi" width="40px"
@@ -88,6 +89,12 @@
             </nav>
         </header>
     </div>
+    <div class="icon-bar">
+        <a href="#" class="social" style="background-color: white; padding: 5px; color: black;"><span style="font-size: 10pt;">share</span></a>
+        <a href="#" class="social" target="_blank" id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social" target="_blank" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="social" target="_blank" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
     <div class="row footer">
         <div style="flex-basis: 30%;">
             <img src="img/web-logo-white.png" alt="Logo SMK Sains Pertiwi" width="60px">
